@@ -1,12 +1,13 @@
-![Screenshot](https://res.cloudinary.com/turnup/image/upload/v1526512881/homepage-cards.png)
+![1627979724210](https://user-images.githubusercontent.com/44171601/127985052-0cc67013-efa1-4dc8-baa6-cbe933a16969.png)
+
 
 # First Node Website Tutorial Starter Files
 
 These are the starter files to accompany the tutorial for building a simple Node.js website with Express and Pug.
 
-You can [access the tutorial here](https://freshman.tech/learn-node).
+You can [access the tutorial here](https://github.com/tanveerns).
 
-[Live demo](https://freshman-node.herokuapp.com/)
+[Live demo](https://herokuapp.com/)
 
 ## Instructions
 1. Clone repo
