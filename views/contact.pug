@@ -1,0 +1,227 @@
+extends default
+
+block content
+	
+	section.portfolio-item(style='display:none;')
+		.container-fluid
+			.row
+				.col-lg-12
+					.portfolio-headline
+						#particles-js
+						.container
+							.row
+								.col-lg-12
+									.typed-headline
+										span.skilltechtypetext
+											span.typed-cursor |
+										p
+											| Better Tomorrow is a state of the art platform that enables one-to-many recognition on-demand. 
+											br
+											| Whether on-premise or in the cloud, we are ready to meet your needs
+										a#project-info.btn.btn-default.pull-right.hvr-sweep-to-right.primary-2-back(href='#') Project Info
+	
+
+	section#portfolio-details.portfolio-item-details
+		.container
+			.row
+			.col-lg-12
+				.col-md-12
+					.contact-headline
+						h3.wow.fadeIn.animated.contact-heading
+							| Let&apos;s 
+							span Connect
+						p.wow.fadeIn.animated.contact-paragraph Get in touch with us and get all the answers to your needs
+					.contact-content
+						.contact-info
+							p.contact-header
+								span Head office 
+							.info-line
+								.info-icon.wow.fadeIn.animated
+									i.fa.fa-map-marker.primary(aria-hidden='true')
+								.info-text.wow.fadeIn.animated
+									p.contact-text-info
+										| 402 Plainfield Avenue San Francisco
+										br
+										| California, USA 13202
+							p.contact-header
+								span Delhi NCR Office 
+							.info-line
+								.info-icon.wow.fadeIn.animated
+									i.fa.fa-map-marker.primary(aria-hidden='true')
+								.info-text.wow.fadeIn.animated
+									p.contact-text-info
+										| 402 Plainfield Avenue San Francisco
+										br
+										| California, USA 13202
+							.info-line
+								.info-icon.wow.fadeIn.animated(style='vertical-align:top;')
+									i.fa.fa-envelope-o.primary(aria-hidden='true')
+								.info-text.wow.fadeIn.animated
+									p.contact-text-info normedia000sen@gmail.com
+									p.contact-text-info info@normedia000sen.com
+									p.contact-text-info contact@normedia000sen.com
+							.info-line
+								.info-icon.wow.fadeIn.animated
+									i.fa.fa-phone.primary(aria-hidden='true')
+								.info-text.wow.fadeIn.animated
+									p.contact-text-info 077270124, 099900687
+							.bottom-info
+								h4.wow.fadeIn.animated
+									span Connect
+									|  with us
+								ul.list-inline.social-icons.wow.fadeIn.animated
+									li
+										a.primary-2-back.primary-back-hover(href='https://www.facebook.com/')
+											i.fa.fa-facebook(aria-hidden='true')
+									li
+										a.primary-2-back.primary-back-hover(href='https://twitter.com/')
+											i.fa.fa-twitter(aria-hidden='true')
+									li
+										a.primary-2-back.primary-back-hover(href='https://www.instagram.com/')
+											i.fa.fa-instagram(aria-hidden='true')
+									li
+										a.primary-2-back.primary-back-hover(href='https://www.linkedin.com/')
+											i.fa.fa-linkedin(aria-hidden='true')
+									
+	.container-fluid.pr_contactmain
+		br
+		br
+		.container.pr_contactsection
+			br
+			h4.wow.fadeIn.animated(style="color:#fff;")
+				| Send us a 
+				span(style="font-weight:700;") Message
+			form(method='post' action='contactmec.php')
+				.pr_form-group
+					label(for='name')
+						| Name: *
+						span (required)
+					input#name.pr_form-control(type='text' name='mail_name' required='')
+					br
+					label(for='name')
+						| Email: *
+						span (required)
+					input#email.pr_form-control(type='email' name='mail_to' required='')
+					br
+					label(for='event_type') Event Type: 
+					br
+					input(type='checkbox' name='eventtype[]' value='Pre Wedding')
+					| Media Coverage/Press Conference
+					br
+					input(type='checkbox' name='eventtype[]' value='Wedding')
+					| Wedding
+					br
+					br
+					label(for='photography') Photography: 
+					br
+					input(type='checkbox' name='photography[]' value='Kids' style=' float:left; display:inline-block;')
+					| Kids
+					br
+					input(type='checkbox' name='photography[]' value='fashion' style='float:left; display:inline-block;/>Fashion<br />\
+					<input type=')
+					| Wedding
+					br
+					input(type='checkbox' name='photography[]' value='Pre Wedding')
+					| Pre Wedding
+					br
+					input(type='checkbox' name='photography[]' value='Food')
+					| Food
+					br
+					input(type='checkbox' name='photography[]' value='Event')
+					| Event
+					br
+					input(type='checkbox' name='photography[]' value='Portrait')
+					| Portrait
+					br
+					input(type='checkbox' name='photography[]' value='Product')
+					| Product
+					br
+					input(type='checkbox' name='photography[]' value='Architecture')
+					| Architecture
+					br
+					input(type='checkbox' name='photography[]' value='Aerial')
+					| Aerial
+					br
+					input(type='checkbox' name='digitalmarketing' value='Digital Marketing')
+					h3(style='display:inline-block;font-size:20px;') Digital Marketing
+					br
+					input(type='checkbox' name='travel' value='Travel')
+					h3(style='display:inline-block;font-size:20px;') Travel
+					br
+					br
+					label(for='advertisement') Advertisement: 
+					br
+					input(type='checkbox' name='advertisement[]' value='Web Social Media')
+					| Web &amp; Social Media
+					br
+					input(type='checkbox' name='advertisement[]' value='Television Media')
+					| Television Media
+					br
+					input(type='checkbox' name='advertisement[]' value='Short Film')
+					| Short Film
+					br
+					input(type='checkbox' name='advertisement[]' value='Print')
+					| Print
+					br
+					br
+					label(for='graphics') Graphics: 
+					br
+					input(type='checkbox' name='graphics[]' value='Logo Design')
+					| Logo Design
+					br
+					input(type='checkbox' name='graphics[]' value='Advertisement Desig')
+					| Advertisement Design
+					br
+					input(type='checkbox' name='graphics[]' value='2d/3d Motion Graphics Video')
+					| 2d/3d Motion Graphics Video
+					br
+					input(type='checkbox' name='graphics[]' value='Logo Motion Video')
+					| Logo Motion Video
+					br
+					input(type='checkbox' name='graphics[]' value='2d/3d Graphics')
+					| 2d/3d Graphics
+					br
+					input(type='checkbox' name='graphics[]' value='Posters')
+					| Posters
+					br
+					br
+					label(for='requirements') Requirements: 
+					br
+					input(type='checkbox' name='requirements[]' value='Pre Wedding Photoshoot')
+					| Pre Wedding Photoshoot
+					br
+					input(type='checkbox' name='requirements[]' value='Pre Wedding/Save The Date Video')
+					| Pre Wedding/Save The Date Video
+					br
+					input(type='checkbox' name='requirements[]' value='Can Did Wedding Photography')
+					| Candid Wedding Photography &#x9;
+					br
+					input(type='checkbox' name='requirements[]' value='Traditional wedding Photography')
+					| Traditional Wedding Photography &#x9;
+					br
+					input(type='checkbox' name='requirements[]' value='Cinemetic Wedding Video')
+					| Cinemetic Wedding Video &#x9;
+					br
+					input(type='checkbox' name='requirements[]' value='Traditional Wedding Video')
+					| Traditional Wedding Video &#x9;
+					br
+					br
+					label(for='event_date')
+						| Event Date: *
+						span (required)
+					br
+					input(type='date' name='mail_date')
+					br
+					br
+					label(for='city')
+						| City/Venue: *
+						span (required)
+					input#city.pr_form-control(type='text' name='mail_city' required='')
+					br
+					label(for='message') Any other information that you wish to share: 
+					textarea#message.pr_form-control(name='mail_msg' rows='6')
+					br
+					button.btn.pr_btn-default.wow.fadeIn.primary-back-hover.primary-hover-border.animated(type='submit' style='visibility: visible;') Submit
+					br
+		br
+		br

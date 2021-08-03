@@ -1,0 +1,264 @@
+extends default
+
+block content
+	section#hero.hero-section-video-dark.slideaccordheight(style='margin:0;')
+		.video-overlay
+		.hero-video
+			video#bgvid(autoplay='' loop='' poster='assets/video/' muted='' playsinline='')
+				source(src='assets/video/particle-video-dark.mp4' type='video/mp4')
+				source(src='assets/video/particle-video-dark.webm' type='video/webm')
+		.container-fluid
+			.row
+				.col-lg-12
+					#particles-js.slideaccordheight
+						h3.first-headline(style='z-index:1;')
+							.swiper-container
+								// Additional required wrapper
+								.swiper-wrapper
+									.swiper-slide
+										img(src='assets/images/sliders/a1.jpg' style='width:100%;height:100%;')
+									.swiper-slide
+										img(src='assets/images/sliders/a2.jpg' style='width:100%;height:100%;')
+									.swiper-slide
+										img(src='assets/images/sliders/a3.jpg' style='width:100%;height:100%;')
+									.swiper-slide
+										img(src='assets/images/sliders/a4.jpg' style='width:100%;height:100%;')
+									.swiper-slide
+										img(src='assets/images/sliders/a5.jpg' style='width:100%;height:100%;')
+									.swiper-slide
+										img(src='assets/images/sliders/a6.jpg' style='width:100%;height:100%;')
+									.swiper-slide
+										img(src='assets/images/sliders/a7.jpg' style='width:100%;height:100%;')
+									.swiper-slide
+										img(src='assets/images/sliders/a3.jpg' style='width:100%;height:100%;')
+									.swiper-slide
+										img(src='assets/images/sliders/a4.jpg' style='width:100%;height:100%;')
+									// Add Pagination
+								.swiper-pagination
+								// Add Arrows
+								.swiper-button-next.menuhidd
+								.swiper-button-prev.menuhidd
+	section#big-image.image-section.home-image-section
+		.container
+			.row
+				.col-md-12
+					h3.wow.fadeInLeft.animated
+						span #{home.quality}
+					h4.wow.fadeInLeft.animated
+					a(href='contact.php')
+						button.btn.btn-default.btn-lg.wow.fadeInRight.hvr-sweep-to-right.primary-2-back.animated Get it now
+	section#about.about-section.home-about-section.hidden
+		.container
+			.row
+				.col-lg-12
+					.about-text
+						h2.wow.fadeIn.animated
+							span #{home.about[0]}
+						p.wow.fadeIn.animated.home-page-para-center
+							| #{home.about[1]}
+						ul.about-icons.list-inline
+							li.wow.fadeIn.animated
+								.icon
+									i.material-icons.primary beenhere
+								.text #{home.about[2]}
+							li.wow.fadeIn.animated
+								.icon
+									i.material-icons.primary comment
+								.text #{home.about[3]}
+							li.wow.fadeIn.animated
+								.icon
+									i.material-icons.primary insert_chart
+								.text #{home.about[4]}
+					.about-images
+						.mockup.image-left
+							img.wow.fadeInLeft.animated(src='assets/images/ipads-left.png' alt='ipad')
+						.mockup.image-center
+							img.wow.slideInUp.animated(src='assets/images/ipads-center.png' alt='ipad')
+						.mockup.image-right
+							img.wow.fadeInRight.animated(src='assets/images/ipads-right.png' alt='ipad')
+	.section.gallery-section
+		.container
+			h2.wow.fadeIn.animated.gallery-heading(style='visibility: hidden; animation-name: none;')
+				span
+					center
+			.gallery
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt1.jpg')
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt2.jpg')
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt3.jpg')
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt4.jpg')
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt5.jpg')
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt6.jpg')
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt7.jpg')
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt8.jpg')
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt9.jpg')
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt10.jpg')
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt11.jpg')
+				.gallery-item
+					img.gallery-image(src='assets/images/habout/abt12.jpg')
+
+	
+	section#quote.quote-section
+		.container-fluid
+			.row
+				.col-md-12.quote-headline
+					h4.wow.fadeIn.animated
+						span #{home.quotes}
+				.col-md-12.quote-bottom
+					.container
+						h3.wow.fadeIn.animated
+							| #{home.style}
+							span.primary
+						p.wow.fadeIn.animated
+							span
+	
+	section#services.services-section.home-service-section
+		.container
+			.row
+				.col-md-12.service-headline
+					h2.wow.fadeIn.animated
+						span #{home.wise[0]}
+					p.wow.fadeIn.animated #{home.wise[1]}
+				.col-md-12.service-content
+					.left
+						.service.wow.fadeIn.animated
+							.text
+								a.primary-hover(href='events.php') #{home.wise[2]}
+								p
+									| #{home.wise[8]}
+							.icons
+								i.material-icons.primary create
+						.service.wow.fadeIn.animated
+							.text
+								a.primary-hover(href='graphics.php') #{home.wise[3]}
+								p #{home.wise[9]}
+							.icons
+								i.material-icons.primary screen_share
+						.service.wow.fadeIn.animated
+							.text
+								a.primary-hover(href='digital-marketing.php') #{home.wise[4]}
+								p #{home.wise[10]}
+							.icons
+								i.material-icons.primary devices
+					.service-image
+						img(src='assets/images/iphone-services.png' alt='iphone')
+					.right
+						.service-2.wow.fadeIn.animated
+							.icons
+								i.material-icons.primary photo_camera
+							.text
+								a.primary-hover(href='photography.php') #{home.wise[5]}
+								p
+									| #{home.wise[11]}
+						.service-2.wow.fadeIn.animated
+							.icons
+								i.material-icons.primary video_library
+							.text
+								a.primary-hover(href='advertisement.php') #{home.wise[6]}
+								p
+									| #{home.wise[12]}
+						.service-2.wow.fadeIn.animated
+							.icons
+								i.material-icons.primary card_travel
+							.text
+								a.primary-hover(href='travel.php') #{home.wise[7]}
+								p
+									| #{home.wise[13]}
+	
+	section#call-to.call-to-section
+		.call-to-layer.main-gradient
+		.container
+			.row
+				.col-md-12
+					h3.wow.fadeIn.animated
+						| Like what You see? 
+						span Contact Us
+						|  Now!
+					p.wow.fadeIn.animated
+						| We strive to provide you with proficient solutions that can be tailored as per your needs and requirements.
+					button.btn.btn-default.wow.fadeInRight.hvr-sweep-to-right.button-gradient.animated
+						a(href='contact.php') Get it Now
+	
+	section#contact.contact-section
+		.container
+			.row
+				.col-md-12
+					.contact-headline
+						h3.wow.fadeIn.animated
+							| Let&apos;s 
+							span Connect
+						p.wow.fadeIn.animated Get in touch with us and get all the answers to your needs.
+					.contact-content
+						.contact-info
+							p.contact-header
+								span Head office 
+							.info-line
+								.info-icon.wow.fadeIn.animated
+									i.fa.fa-map-marker.primary(aria-hidden='true')
+								.info-text.wow.fadeIn.animated
+									p.contact-text-info
+										| 402 Plainfield Avenue San Francisco
+										br
+										| California, USA 13202
+							p.contact-header
+								span Delhi NCR Office 
+							.info-line
+								.info-icon.wow.fadeIn.animated
+									i.fa.fa-map-marker.primary(aria-hidden='true')
+								.info-text.wow.fadeIn.animated
+									p.contact-text-info
+										| 402 Plainfield Avenue San Francisco 
+										br
+										|  California, USA 13202
+							.info-line
+								.info-icon.wow.fadeIn.animated
+									i.fa.fa-envelope-o.primary(aria-hidden='true')
+								.info-text.wow.fadeIn.animated
+									p.contact-text-info normedia000sen@gmail.com
+							.info-line
+								.info-icon.wow.fadeIn.animated
+									i.fa.fa-phone.primary(aria-hidden='true')
+								.info-text.wow.fadeIn.animated
+									p.contact-text-info 315-588-1064, 315-578-1064
+							.bottom-info
+								h4.wow.fadeIn.animated
+									span Connect
+									|  with us
+								ul.list-inline.social-icons.wow.fadeIn.animated
+									li
+										a.primary-2-back.primary-back-hover(href='https://www.facebook.com/')
+											i.fa.fa-facebook(aria-hidden='true')
+									li
+										a.primary-2-back.primary-back-hover(href='https://twitter.com/')
+											i.fa.fa-twitter(aria-hidden='true')
+									li
+										a.primary-2-back.primary-back-hover(href='https://www.instagram.com/')
+											i.fa.fa-instagram(aria-hidden='true')
+									li
+										a.primary-2-back.primary-back-hover(href='https://www.linkedin.com/')
+											i.fa.fa-linkedin(aria-hidden='true')
+						.contact-form
+							h4.wow.fadeIn.animated
+								| Send us a 
+								span Message
+							form(method='post' action='connect')
+								.form-group.wow.fadeIn.animated
+									label(for='name') Name: 
+									input#name.form-control(type='text' name='mail_name')
+								.form-group.wow.fadeIn.animated
+									label(for='email') Email: 
+									input#email.form-control(type='email' name='mail_to')
+								.form-group.wow.fadeIn.animated
+									label(for='message') Message: 
+									textarea#message.form-control(name='mail_msg' rows='4')
+								button.btn.btn-default.wow.fadeIn.primary-back-hover.primary-hover-border.animated(type='submit') Submit

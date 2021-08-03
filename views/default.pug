@@ -1,0 +1,296 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  title Nor Media
+  // Fonts
+  link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700%7CTitillium+Web:200,300,400,600,700&subset=latin-ext' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet')
+  link(href='assets/fonts/font-awesome/css/font-awesome.min.css' rel='stylesheet')
+  // Libraries CSS
+  link(href='assets/css/slider-flex-style.css' rel='stylesheet')
+  link(href='assets/css/bootstrap.min.css' rel='stylesheet')
+  link(href='assets/css/animate.min.css' rel='stylesheet')
+  link(href='assets/css/bootstrap-colorpicker.min.css' rel='stylesheet')
+  // Custom CSS
+  link(href='assets/css/particle_video_dark.css' rel='stylesheet')
+  link(href='assets/css/particle_demo.css' rel='stylesheet')
+  link(href='assets/css/skins.css' rel='stylesheet')
+  link(rel='stylesheet' href='assets/css/custom_menu_style.css')
+  link(rel='stylesheet' href='assets/css/newstyle.css')
+  link(rel='stylesheet' href='assets/css/swiper_style.css')
+  link(rel='stylesheet' href='assets/css/about_team_style.css')
+  link(rel='stylesheet' href='assets/css/custome_stylesheet.css')
+  // Link Swiper's CSS
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css')
+  // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+  // WARNING: Respond.js doesn't work if you view the page via file://
+  //if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+//
+  The #page-top ID is part of the scrolling feature -
+  the data-spy and data-target are part of the built-in Bootstrap scrollspy function
+//
+  Navigation Menu
+  ==================================================
+header.header-main-ba(style='z-index:10;')
+  nav#cssmenu.nav-main-ba
+    .logo
+      img(src='assets/images/sliders/header-logo.png')
+    #head-mobile
+    .button
+    ul.ulright.ul-list-opacity(style='z-index:20;')
+      li
+        a(href='/') Home
+      li
+        a(href='about') About Us
+      li
+        a(href='#') Service
+        ul.menufm
+          li.menuhidd   
+          li.menuhidd   
+          li.menuhidd   
+          li
+            a(href='events') Events
+          li
+            a(href='graphics') Graphic
+          li
+            a(href='advertisement') Advertisement
+          li
+            a(href='photography') Photography
+          li
+            a(href='digital-marketing') Digital Marketing
+          li
+            a(href='travel') Travel
+          li.menuhidd   
+          li.menuhidd   
+          li.menuhidd   
+      li
+        a(href='semilar-workshop') Seminar Workshop
+      li
+        a(href='blog') Blog
+      li
+        a(href='contact') Contact Us
+//
+  <li><a href='/'>Home</a></li>
+  <li><a href='service'>Service</a>
+  <li><a href='about'>About</a></li>
+  <li><a href='product'>Product</a></li>
+  <li><a href='contact'>Contact</a></li>
+  <li><a href='blog'>Blog</a></li>
+
+block content
+
+
+
+
+
+footer
+  p
+    | Copyright &copy; 2021 -
+    a.primary-hover(href='/')  Nor Media
+// Style Switcher
+#styler.style-switcher(hidden='')
+  .color-chooser
+    .style-heading
+      p Choose Your Colors
+    // /.style-heading
+    ul.colors-list
+      li
+        .color-picker
+          p Primary Color
+          #cp1.input-group.colorpicker-component
+            input.form-control(type='text' value='#9600f4')
+            span.input-group-addon
+              i
+        // /.color-picker
+      li
+        .color-picker
+          p Primary color 2
+          #cp2.input-group.colorpicker-component
+            input.form-control(type='text' value='#7100B7')
+            span.input-group-addon
+              i
+        // /.color-picker
+      li
+        .color-picker
+          p Primary Color 3
+          #cp3.input-group.colorpicker-component
+            input.form-control(type='text' value='#B649FF')
+            span.input-group-addon
+              i
+        // /.color-picker
+      li
+        .color-picker
+          p Primary Color 4
+          #cp4.input-group.colorpicker-component
+            input.form-control(type='text' value='#D42BFF')
+            span.input-group-addon
+              i
+        // /.color-picker
+      li
+        .color-picker
+          p Secondary color
+          #cp5.input-group.colorpicker-component
+            input.form-control(type='text' value='#00F2FF')
+            span.input-group-addon
+              i
+        // /.color-picker
+      li
+        .color-picker
+          p Secondary color 2
+          #cp6.input-group.colorpicker-component
+            input.form-control(type='text' value='#00BBFF')
+            span.input-group-addon
+              i
+        // /.color-picker
+      li
+        // Button trigger modal
+        button.btn.btn-default(type='button' data-toggle='modal' data-target='#style-modal')
+          | Get CSS
+        a.btn.btn-default(href='#') Buy Now
+  // /.styles
+  //
+    <div class="gear" id="gear-click">
+    <i class="fa fa-cog fa-spin fa-fw slow-spin"></i>
+    </div>!
+  // /.gear
+// /.style-switcher
+// Modal
+#style-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='style-modal-label')
+  .modal-dialog.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+        h4#style-modal-label.modal-title Your Colors CSS
+      .modal-body
+        pre.
+          \n                              
+                                    
+      .modal-footer
+        button#downloadLink.btn.btn-default(type='button') Download CSS
+        button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+// Swiper JS
+script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js')
+script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+// JavaScript Libraries
+script(src='assets/js/libs.min.js')
+// Custom Particle Theme JavaScript
+script(src='assets/js/particle-theme-1.min.js')
+script(src='assets/js/skilltech-style-switcher.min.js')
+script(src='assets/js/custom_menu_script.js')
+// Initialize Swiper
+script.
+  var mySwiper = new Swiper ('.swiper-container', {
+  speed: 400,
+  spaceBetween: 100,
+  initialSlide: 0,
+  //truewrapper adoptsheight of active slide
+  autoHeight: false,
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  // delay between transitions in ms
+  autoplay: 2000,
+  autoplayStopOnLast: false, // loop false also
+  // If we need pagination
+  pagination: '.swiper-pagination',
+  paginationType: "bullets",
+  // Navigation arrows
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
+  // And if we need scrollbar
+  //scrollbar: '.swiper-scrollbar',
+  // "slide", "fade", "cube", "coverflow" or "flip"
+  effect: 'slide',
+  // Distance between slides in px.
+  spaceBetween: 0,
+  //
+  slidesPerView: 5,
+  //
+  centeredSlides: true,
+  //
+  slidesOffsetBefore: 2,
+  //
+  grabCursor: true,
+  });
+script(src='https://code.jquery.com/jquery-1.11.1.js')
+script(src='/socket.io/socket.io.js')
+script.
+  $(function () {
+  
+  var socket = io();
+  
+  socket.on('message', function(data){
+  $('#message').append($('<li>').text(data));
+  });
+  
+  $('form').submit(function(e){
+  e.preventDefault(); // prevents page reloading
+  socket.emit('chat message', $('#m').val());
+  $('#m').val('');
+  return false;
+  });
+  
+  socket.on('chat message', function(msg){
+  $('#message').append($('<li>').text(msg));
+  });
+  
+  $('#newbutton').click(function(){
+  $('#icon').toggle();
+  socket.emit('chat button', $('#newbutton').val());
+  });
+
+  socket.on('chat button', function(msg){
+  $('#message').append('<li><p>you click on icon button</p></li>');
+  });
+  
+  $('#facebook').click(function(){
+  socket.emit('social', 'Facebook');
+  });
+  socket.on('facebook', function(msg){
+  $('#message').append('<li><a href="#" class="primary-2-back primary-back-hover"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>');
+  });
+  
+  $('#twitter').click(function(){
+  socket.emit('social', 'Twitter');
+  });
+  socket.on('twitter', function(msg){
+  $('#message').append('<li><a href="#" class="primary-2-back primary-back-hover"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>');
+  });
+
+  $('#youtube').click(function(){
+  socket.emit('social', 'Youtube');
+  });
+  socket.on('youtube', function(msg){
+  $('#message').append('<li><a href="#" class="primary-2-back primary-back-hover"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>');
+  });
+  
+  $('#instagram').click(function(){
+  socket.emit('social', 'Instagram');
+  });
+  socket.on('instagram', function(msg){
+  $('#message').append('<li><a href="#" class="primary-2-back primary-back-hover"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>');
+  });
+  
+  $('#linkedin').click(function(){
+  socket.emit('social', 'Linkedin');
+  });
+  socket.on('linkedin', function(msg){
+  $('#message').append('<li><a href="#" class="primary-2-back primary-back-hover"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>');
+  });
+  socket.on('broadcast', function(data){
+  $('body').append($('<li style="list-style:none;color:#fff;position:fixed;top:10px;right:10px;background-color:black;">').text(data.description));
+  });
+  socket.on('connectToRoom',function(data) {
+  $('body').append($('<li style="list-style:none;color:#fff;position:fixed;top:10px;right:10px;background-color:black;">').text(data));
+  });
+  });

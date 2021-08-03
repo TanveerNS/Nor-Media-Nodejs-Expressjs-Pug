@@ -1,0 +1,20 @@
+extends default
+
+block content
+
+block content
+		
+	div.gallery-section
+		
+		div.profile-details.container
+			h1.profile-name(style="color:#fff;")
+				| #{person.firstname} #{person.lastname}
+			
+			div.profile-image(style=`background: url('/assets/images/team/${person.imgSrc}') top center no-repeat; background-size: cover; width:120px; height:120px;`)
+			
+			h4.profile-tagline(style="color:#fff;")
+				| #{person.tagline}
+			p.profile-bio(style="color:#fff;text-align:justify;")
+				| #{person.bio}
+			a.button.button-twitter(href=`${person.twitter}`)
+				| Follow me on Twitter
